@@ -1,0 +1,160 @@
+/*basic page configuration to disable all problems and add flexes to allign content on centre*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*adding basic flex container*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*making default text style*/
+.text {
+    color: #ad6c6c;
+    font-size: 22px;
+}
+
+/*addin a flex item class for items to allign using blex */
+.item {
+    margin: 0;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*stylising main website components*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.main_page {
+    background-color: #FBEEDC;
+    height: 100%;
+    flex: 1;
+    overflow: auto;
+    padding-top: 50px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.9s;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #ffd700;
+    border-radius: 5px;
+}
+
+footer {
+    height: 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    overflow: auto;
+}
+
+.headline {
+    color: black;
+    font-size: 42px;
+}
+
+/*form stylisation*/
+form {
+    width: 50%;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+button {
+    background-color: #ad6c6c;
+    color: white;
+    margin-top: 15px;
+    padding: 14px 22px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #492e2e;
+    transform: scale(1.5);
+}
+
+/*additional styles for the data from js*/
+.underscore {
+    width: 100%;
+    border-bottom: 5px solid #ad6c6c;
+}
+
+.output {
+    text-align: center;
+    width: 50%;
+}
+
+/*making an error message invisible by default*/
+.error {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .headline {
+        font-size: 22px;
+    }
+
+    footer {
+        font-size: 9px;
+        width: 100%;
+        overflow: hidden;
+    }
+}

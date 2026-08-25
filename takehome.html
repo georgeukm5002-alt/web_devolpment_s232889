@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="item">Job Helper</h1>
+        <nav class="item">
+            <a href="./index.html" class="link">Home</a>
+            <a href="./takehome.html" class="link">Take Home Calculator</a>
+            <a href="./vacancies.html" class="link">Vacancies</a>
+        </nav>
+
+    </header>
+    <main class="main_page container">
+        <form id="job_form" action="send" class="text">
+            <label for="jobtitle">Job title:</label><br>
+            <input type="text" id="jobtitle" name="jobtitle" required class="input"><br>
+            <label for="grossincome">Gross income: </label><br>
+            <input type="text" id="grossincome" name="grossincome" required class="input"><br>
+            <label for="workduration">Choose an option</label><br>
+            <select id="workduration" name="workduration" class="input">
+                <option value="per Year">per Year</option>
+                <option value="per Month">per Month</option>
+                <option value="per Week">per Week</option>
+                <option value="per Hour">per Hour</option>
+            </select><br>
+            <label for="hours">Hours per week: </label><br>
+            <input type="hours" id="hours" name="hours" required class="input"><br>
+            <label for="tax">Tax in %: </label><br>
+            <input type="tax" id="tax" name="tax" required class="input"><br>
+            <label for="hours">NIrate in %: </label><br>
+            <input type="NIrate" id="NIrate" name="NIrate" required class="input"><br>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="error text" id="error">Please enter a valid number.</div>
+        <div id="container" class="container output text">
+
+        </div>
+    </main>
+
+
+    <script src="./js/takehome.js"></script>
+
+    <footer class="center">2024 the website was made by Yehor Manzhos all the rights belong to Yehor Manzhos</footer>
+</body>
+
+</html>

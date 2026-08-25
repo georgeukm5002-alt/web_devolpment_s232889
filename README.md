@@ -1,2 +1,2 @@
 # web_devolpment_s232889
-simple assigment
+coursework for web development module year 2024/2025
